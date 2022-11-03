@@ -1,0 +1,47 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  .sample{
+    width:50%;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .countries-data{
+    margin:20px;
+    width:200px;
+    padding:20px;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  }
+
+  .allCountries-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hide{
+    display:none
+  }
+
+  .show{
+    display: block;
+  }
