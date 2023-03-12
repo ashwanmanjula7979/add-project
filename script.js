@@ -29,6 +29,7 @@ function countriesName() {
             });
             div.appendChild(selectTag)
 
+            singleCountriesCardContainer.classList.remove('hide')
             var selectClass = document.querySelector('.select');
             selectClass.addEventListener('change', function() {
                 specificCountriesCard(this.value)
@@ -73,6 +74,11 @@ function countriesCard(){
 
 function specificCountriesCard(countryName){
     allCountriesCardContainer.classList.add('hide')
+    
+     if(singleCountriesCardContainer.childElementCount > 0){
+        singleCountriesCardContainer.removeChild(singleCountriesCardContainer.firstElementChild);
+
+    }
     const newUrl = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`
     fetch(newUrl)
     .then((response) => {
